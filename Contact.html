@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Contact Us</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Austine Odanga">
+        <meta name="description" content="This is the official contact page for ODANGA ACADEMY">
+        <link rel="stylesheet" href="style.css">
+        <script src="main.js" defer></script>
+
+    </head>
+    <body>
+        <header class="header">
+            <h1 class="header__h1">ODANGA ACADEMY</h1>
+            <nav class="header__nav">
+                <ul class="header__ul">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="Admission.html">Admission</a></li>
+                    <li><a href="Academics.html">Academics</a></li>
+                </ul>
+            </nav>
+            
+        </header>
+        <main class="main contact ">
+            <p>For any enquiries or complains reach out to us here</p>
+            <article id="Location" class="main__article ">
+                <h2 class="contact__h2">Our Location</h2>
+                <p>We are located in :</p>
+                <address>
+                   <p> 
+                    Ziwani, Mlololongo  along Mombasa Road <br>
+                    P.O BOX 18454-00500, Nairobi, Kenya</p>
+                </address>
+                <p>Contact: 0734567891</p>
+                <p>Email: odangaacademy@email.org</p>
+            </article>
+            <figure>
+                <img src="about.jpg" alt="aerial image of the school">
+                <figcaption>Aerial image of the school</figcaption>
+            </figure>
+            <article class="main__article">
+                <form class="main__form" action="https://bin.org/get" method="get">
+                    <fieldset class="contact__fieldset">
+                        <legend><h2 class="contact__h2">Personal Details</h2></legend>
+                        <p class="contact__p">
+                            <label class="contact__label" for="ParentNo">Parent/Gaurdian No:</label>
+                            <input class="contact__input" type="tel" name="ParentNo" id="ParentNo" placeholder="0712345678" pattern="[0-7]{2}[0-9]{8}" autocomplete="on" 
+                            required >
+                        </p>
+                        <p class="contact__p">
+                            <label class="contact__label" for="email">Email:</label>
+                            <input class="contact__input" type="email" name="email" id="email" placeholder="your email">
+                        </p>
+                        <p class="contact__p">Send us your message:</p>
+                        <p class="contact__p">
+                            <label class="contact__label" for="message"></label>
+                            <textarea class="contact__textarea" name="message" id="message" cols="30" rows="10" placeholder="here!!"></textarea>
+                        </p>
+                        <br>
+                        <button class="contact__button" type="submit">Submit</button>
+                        <button class="contact__button" type="reset">Reset</button>
+                    </fieldset>
+                </form>
+            </article>
+
+            
+        </main>
+        <footer class="footer">
+            <p>Copyright&nbsp;&copy;&nbsp;Odanga Academy <time id="year"></time> </p>
+        </footer>
+        
+    </body>
+</html>

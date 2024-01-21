@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Admission Application</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Austine Odanga">
+        <meta name="description" content="This is the official  page admission for ODANGA ACADEMY">
+        <link rel="stylesheet" href="style.css">
+        <script src="main.js" defer></script>
+
+    </head>
+    
+    <body>
+        <header class="header">
+            <h1 class="header__h1">ODANGA ACADEMY</h1>
+            <nav class="header__nav">
+            <ul class="header__ul">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Academics.html">Academics</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+        </header>
+        <main class="main">
+            <article class="main__article admission">
+                <h2 class="admission__h2">Admission Requirements</h2>
+                <p>New students will be required to come with the following:</p>
+        <!---list of requirements-->
+            </article>
+        <article class="main__article admission">
+            <figure>
+                <img src="admission.jpg" alt="filling an application form">
+            </figure>
+            <p class="admission__p" >Fill in your details in the form below:</p>
+        
+            <form class="admission__form" action="https://bin.org/get" method="get">
+                <fieldset class="admission__fieldset">
+                    <legend> <h3 class="admission_h3">Application Form</h3></legend>
+                    <p class="admission__p" >
+                <label class="admission__label" for="StudentName">Student Name:</label>
+                <input class="admission__input" type="text" name="StudentName" id="StudentName" placeholder="Jesus Christ" autocomplete="on"
+                required autofocus>
+            </p>
+            <p class="admission__p" >
+                <label class="admission__label" for="previousSchool">Previous School:</label>
+                <input class="admission__input" type="text" name="previousSchool" id="previousSchool" placeholder="Jesus School" autocomplete="on"
+                required >
+            </p>
+            <p class="admission__p" >
+                <label class="admission__label" for="Parent/Gaurdian">Parent/Gaurdian Name:</label>
+                <input class="admission__input" type="text" name="Parent/Gaurdian" id="Parent/Gaurdian" placeholder="Jesus Christ" autocomplete="on"
+                required>
+            </p>
+            <p class="admission__p" >
+                <label class="admission__label" for="ParentNo">Parent/Gaurdian No:</label>
+                <input class="admission__input" type="tel" name="ParentNo" id="ParentNo" placeholder="0712345678" pattern="[0-7]{2}[0-9]{8}" autocomplete="on" 
+                required >
+            </p>
+            <p class="admission__p" >Previous Grade:</p>
+                <p class="admission__p" >
+                    <input class="admission__input" type="radio" name="grade" id="gradeA" value=" gradeA">
+                    <label class="admission__label" for="gradeA">A</label>
+                </p>
+                <p class="admission__p" >
+                    <input class="admission__input" type="radio" name="grade" id="gradeB" value=" gradeB">
+                    <label class="admission__label" for="gradeB">B</label>
+                </p>
+                <p class="admission__p" >
+                    <input class="admission__input" type="radio" name="grade" id="gradeC" value=" gradeC">
+                    <label class="admission__label" for="gradeC">C</label>
+                </p>
+                <p class="admission__p" >
+                    <input class="admission__input" type="radio" name="grade" id="gradeD" value="gradeD">
+                    <label class="admission__label" for="gradeD">D</label>
+                </p>
+                </fieldset>
+            </form>
+            <button class="admission__button" type="submit">Submit</button>
+            <button class="admission__button" type="reset">Reset</button>
+        </article>
+
+        <br>
+        <article id="schoolfees" class="main__article">
+            <h2>Schoolfees Structure</h2>
+            <p>Students shall be required to pay 50% of the fees during admission and the rest within the first 8 weeks.</p>
+            <p>Here is our schoolfees structure:</p>
+            <table>
+                <thead>
+                <tr>
+                <th>Fees</th>
+                <th>Term One</th>
+                <th>Term Two</th>
+                <th>Term Three</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Tution</td>
+                    <td>10000</td>
+                    <td>9000</td>
+                    <td>8000</td>
+                </tr>
+                <tr>
+                    <td>Medical</td>
+                    <td>4000</td>
+                    <td>4000</td>
+                    <td>4000</td>
+                </tr>
+                <tr>
+                    <td>Activity</td>
+                    <td>3000</td>
+                    <td>2000</td>
+                    <td>1000</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td><strong>Total</strong></td>
+                    <td>17000</td>
+                    <td>15000</td>
+                    <td>13000</td>
+                </tr>
+            </tfoot>
+
+            </table>
+        </article>
+        <p class="center">
+            <a class="center__a" href="#">Back To Top</a>
+        </p>
+        </main>
+       
+        <footer class="footer">
+            <p>Copyright&nbsp;&copy;&nbsp;Odanga Academy <time id="year"></time> </p>
+        </footer>
+    </body>
+    
+
+</html>
